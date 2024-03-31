@@ -28,6 +28,9 @@ repositories {
 	maven {
 		url 'https://jitpack.io'
 	}
+	maven {
+		url "https://cursemaven.com"
+	}
 }
 
 apply plugin: 'forge'
@@ -113,6 +116,7 @@ dependencies {
 	compileOnly "codechicken:NotEnoughItems:1.7.10-1.0.5.120:dev"
 	compileOnly "codechicken:CodeChickenLib:1.7.10-1.1.3.140:dev"
 	compileOnly "codechicken:CodeChickenCore:1.7.10-1.0.7.47:dev"
+	compileOnly "curse.maven:extra-utilities-225561:2264383-deobf"
 
 	compileOnly("com.github.GTNewHorizons:TinkersConstruct:1.11.12-GTNH:dev") {
 		transitive = false
