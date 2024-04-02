@@ -269,14 +269,18 @@ repositories {
 }
 
 dependencies {
-	shadow('org.spongepowered:mixin:0.7.11-SNAPSHOT') {
-		// Mixin includes a lot of dependencies that are too up-to-date
-		exclude module: 'launchwrapper'
-		exclude module: 'guava'
-		exclude module: 'gson'
-		exclude module: 'commons-io'
-		exclude module: 'log4j-core'
-	}
+
+//	shadow('curse.maven:unimixins-826970:5193846') {
+//		// Mixin includes a lot of dependencies that are too up-to-date
+//		exclude module: 'launchwrapper'
+//		exclude module: 'guava'
+//		exclude module: 'gson'
+//		exclude module: 'commons-io'
+//		exclude module: 'log4j-core'
+//	}
+
+	//Maybe this broke the Mixin version
+	compileOnly('curse.maven:unimixins-826970:5193846')
 }
 
 def refMap = "${tasks.compileJava.temporaryDir}" + File.separator + refMapForYourConfig
